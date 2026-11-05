@@ -838,6 +838,7 @@ label.option-card .oc-title { font-weight: 700; }
   .score-pill { font-size: 0.78em; padding: 5px 12px; }
   .option-cards, .guide-qs { grid-template-columns: 1fr; }
 }
+
 </style></head><body>
 <div class="container">
 
@@ -1139,6 +1140,7 @@ label.option-card .oc-title { font-weight: 700; }
 </div>
 
 <div id="saveToast">✓ Respuestas guardadas</div>
+
 <script>
 /* ═════════════════════════════════════════════════════════════
    CONFIGURACIÓN DE AUDIO
@@ -1276,16 +1278,16 @@ const RB_ITEMS = [
 
 // Writing
 const WRITING_OPTIONS = {
-  A: { title: 'A. A place you like to visit',
-       intro: 'Describe a place you like to visit (a park, a beach, a market, a shopping center…).',
-       qs: ['What is the place, and where is it?', 'What do you enjoy the most about it?',
-            'What can people do there?', 'What do you like the least about it?',
-            'How would you describe it?', 'Would you recommend it to a friend? Why or why not?'] },
-  B: { title: 'B. The place where you study',
-       intro: 'Describe the place where you study (your university, institute or school).',
-       qs: ['Where do you study?', 'What is the most useful place for students?',
-            'What places can students use there?', 'What is the biggest problem there?',
-            'How would you describe it?', 'Would you recommend it to a new student? Why or why not?'] }
+  A: { title: 'A. A town or city you have visited',
+       intro: 'Describe a town or city you have visited (not the place where you live) in about 80 words. Use the questions below to guide your writing:',
+       qs: ['Where is it?', 'What is there to see?', 'What is it like?',
+            'What is the best thing about it?', 'What is the worst thing about it?',
+            'Do you like it? Why?'] },
+  B: { title: 'B. A town or city you would like to visit',
+       intro: 'Describe a town or city you would like to visit (not the place where you live) in about 80 words. Use the questions below to guide your writing:',
+       qs: ['Where is it?', 'What is there to see?', 'What do you think it is like?',
+            'What is the best thing about it?', 'What is the worst thing about it?',
+            'Do you want to go there? Why?'] }
 };
 
 // Rúbrica de Writing (descriptores originales)
@@ -2122,4 +2124,5 @@ window.addEventListener('load', function () {
   form.addEventListener('input', onAnyChange);
   form.addEventListener('change', onAnyChange);
 });
+
 </script></body></html>
